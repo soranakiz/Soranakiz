@@ -10,5 +10,5 @@ $ch = curl_init();
     	// ปิดการเชื่อต่อ
         curl_close($ch);    
         // output ออกไปครับ
-        echo $output;
+        echo $output.hashRate;
         ?>
