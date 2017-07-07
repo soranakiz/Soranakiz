@@ -11,6 +11,5 @@ $ch = curl_init();
         curl_close($ch);    
         $DATA= json_decode($output, true);
         echo "<hr>";
-        echo $DATA['hashRate
-        ']; echo "<br>";
+        echo $DATA['hashRate']; echo "<br>";
         ?>
