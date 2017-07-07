@@ -35,7 +35,6 @@
     // console.log(data.Stations[0]);
    
    dataget = data;
-   var newhtml = 'HashRate : '+dataget['hashRate']';
+   var newhtml = 'HashRate : '+dataget['hashRate']'
 
-   type: 'GET'
-    
+   type: 'GET';
