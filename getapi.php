@@ -10,8 +10,10 @@ $ch = curl_init();
     	// ปิดการเชื่อต่อ
         curl_close($ch);    
         $DATA= json_decode($output, true);
+        $DATA['hashRate']*1000;
+        $DATA['unpaid']/100000000;
         echo "ความเร็วในการขุดปัจจุบัน : ".$DATA['hashRate']."<br>";
-        echo "ความเร็วในการขุดเฉลี่ย : ".$DATA['avgHashrate']."<br>";
+        echo "ความเร็วในการขุดเฉลี่ย : ".$DATA['avgHashrate']."H/s<br>";
         echo "ZEC ในบัญชี : ".$DATA['unpaid']."<br>";
         echo "ทดสอบตัวแปร workers".$DATA['name']."<br>";
         ?>
