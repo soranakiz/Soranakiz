@@ -23,7 +23,7 @@ $arrHeader[] = "Authorization: Bearer {$strAccessToken}";
 $arrPostData = array();
 $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
 $arrPostData['messages'][0]['type'] = "text";
-$arrPostData['messages'][0]['text'] = "ความเร็วเฉลี่ย :".$AVG."";
+$arrPostData['messages'][0]['text'] = "จำนวนเหรียญที่รอจ่ายรอบต่อไป :".$BALANCE."";
  
 $ch2 = curl_init();
 curl_setopt($ch2, CURLOPT_URL,$strUrl);
