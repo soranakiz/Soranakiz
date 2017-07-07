@@ -11,5 +11,5 @@ $ch = curl_init();
         curl_close($ch);    
         $DATA= json_decode($output, true);
         echo "<hr>";
-        echo $DATA['hashRate']; echo "<br>";
+        echo 'ความเร็วในการขุดปัจจุบัน :'+'$DATA['hashRate']; echo "<br>";
         ?>
