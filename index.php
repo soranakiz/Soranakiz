@@ -35,10 +35,7 @@
     // console.log(data.Stations[0]);
    
    dataget = data;
-   var indexselect = 0;
-                var newhtml = '';
-                newhtml += '<p>HashRate : '+dataget['hashRate']+'</p>;
-                $("#preview").html(newhtml);
+   var newhtml = '<p>HashRate : '+dataget['hashRate']+'</p>;
    
    
      
