@@ -10,7 +10,7 @@ $HR = $DATA['hashRate'];
 $AVG = ($DATA['avgHashrate']/1000);
 $HashAVG = sprintf("%.2f",$AVG);
 $BALANCE = ($DATA['unpaid']/100000000);
-$Unpaid = sprintf("%.6f",$BALANCE);
+$Unpaid = sprintf("%.5f",$BALANCE);
 
 $strAccessToken = "izEK3fPoNJsOUJW2eQ0v3En4AZJNcq4oqE/PKoBH45ZPiicl2BiASrdgoYQ0RtfZZhehS5tCWQSCZmnk2Cp/D8lef0BznJLA4aAU8vgOfeenN70Wegu5P7/C8iX1AEnZvb7VW+GSGRMGM1uhdrjGHgdB04t89/1O/w1cDnyilFU="; 
 $content = file_get_contents('php://input');
@@ -25,8 +25,7 @@ $arrHeader[] = "Authorization: Bearer {$strAccessToken}";
 $arrPostData = array();
 $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
 $arrPostData['messages'][0]['type'] = "text";
-$arrPostData['messages'][0]['text'] = "ความเร็วเฉลี่ย : ".$HashAVG." kH/s";
-$arrPostData['messages'][0]['text'] = "จำนวนเหรียญที่รอจ่ายรอบต่อไป : ".$Unpaid." ZEC";
+$arrPostData['messages'][0]['text'] = "รายงานสถานะเครื่องขุด z1070""<br>""ความเร็วเฉลี่ย : ".$HashAVG." kH/s";
  
 $ch2 = curl_init();
 curl_setopt($ch2, CURLOPT_URL,$strUrl);
