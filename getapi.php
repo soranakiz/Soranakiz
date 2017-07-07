@@ -9,8 +9,8 @@ $ch = curl_init();
       
     	// ปิดการเชื่อต่อ
         curl_close($ch);    
-        // output ออกไปครับ
-        //echo $output.hashRate;
-        //var printtt = 'HashRate : '+output.hashRate';
-        print "$output.hashRate";
+        $DATA= json_decode($output, true);
+        echo "<hr>";
+        echo $DATA['hashRate
+        ']; echo "<br>";
         ?>
