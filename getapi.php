@@ -19,12 +19,13 @@ $strUrl = "https://api.line.me/v2/bot/message/reply";
 $arrHeader = array();
 $arrHeader[] = "Content-Type: application/json";
 $arrHeader[] = "Authorization: Bearer {$strAccessToken}";
- 
+
+if($arrJson['events'][0]['message']['text'] == "สวัสดี"){
 $arrPostData = array();
 $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
 $arrPostData['messages'][0]['type'] = "Guyz";
 $arrPostData['messages'][0]['text'] = "Soranakiz";
- 
+}
  
 $ch2 = curl_init();
 curl_setopt($ch2, CURLOPT_URL,$strUrl);
