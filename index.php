@@ -30,11 +30,11 @@
    },
    dataType: 'json',
    success: function(data) {
-   
+   alert("สามารถดึงข้อมูลได้");
     
     // console.log(data.Stations[0]);
    
    dataget = data;
    var newhtml = 'HashRate : '+dataget['hashRate']'
 
-   type: 'GET';
+   type: 'GET'
