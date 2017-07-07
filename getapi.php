@@ -1,14 +1,14 @@
 <?php
 
-$ch = curl_init(); 
-curl_setopt($ch, CURLOPT_URL, "http://zcash.flypool.org/api/miner_new/t1csgRshvziESnqzp68LJbANGy2JRm86xJp/?type=json"); 
-curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1); 
-$output = curl_exec($ch); 
-curl_close($ch);
-$DATA = json_decode($output, true);
-$HR = $DATA['hashRate'];
-$AVG = ($DATA['avgHashrate']/1000);
-$BALANCE = ($DATA['unpaid']/100000000);
+//$ch = curl_init(); 
+//curl_setopt($ch, CURLOPT_URL, "http://zcash.flypool.org/api/miner_new/t1csgRshvziESnqzp68LJbANGy2JRm86xJp/?type=json"); 
+//curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1); 
+//$output = curl_exec($ch); 
+//curl_close($ch);
+//$DATA = json_decode($output, true);
+//$HR = $DATA['hashRate'];
+//$AVG = ($DATA['avgHashrate']/1000);
+//$BALANCE = ($DATA['unpaid']/100000000);
 
 $strAccessToken = "izEK3fPoNJsOUJW2eQ0v3En4AZJNcq4oqE/PKoBH45ZPiicl2BiASrdgoYQ0RtfZZhehS5tCWQSCZmnk2Cp/D8lef0BznJLA4aAU8vgOfeenN70Wegu5P7/C8iX1AEnZvb7VW+GSGRMGM1uhdrjGHgdB04t89/1O/w1cDnyilFU="; 
 $content = file_get_contents('php://input');
