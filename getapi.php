@@ -11,6 +11,6 @@ $ch = curl_init();
         curl_close($ch);    
         // output ออกไปครับ
         //echo $output.hashRate;
-        var printtt = 'HashRate : '+output.hashRate';
-        echo printtt;
+        //var printtt = 'HashRate : '+output.hashRate';
+        echo output.hashRate;
         ?>
