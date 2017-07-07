@@ -13,6 +13,6 @@ $ch = curl_init();
         echo "ความเร็วในการขุดปัจจุบัน : ".$DATA['hashRate']."";
         echo "ความเร็วในการขุดเฉลี่ย : ".$DATA['avgHashrate']."";
         echo "ZEC ในบัญชี : ".$DATA['unpaid']."";
-        echo "ทดสอบตัวแปร workers".$DATA['workers']."";
+        echo "ทดสอบตัวแปร workers".$DATA['worker']."";
         echo "ทดสอบตัวแปร rounds".$DATA['rounds']."";
         ?>
