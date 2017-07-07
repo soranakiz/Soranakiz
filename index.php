@@ -25,7 +25,7 @@ $arrHeader[] = "Authorization: Bearer {$strAccessToken}";
 $arrPostData = array();
 $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
 $arrPostData['messages'][0]['type'] = "text";
-$arrPostData['messages'][0]['text'] = "รายงานสถานะเครื่องขุด z1070x3  ความเร็วปัจจุบัน : ".$HR."  ความเร็วเฉลี่ย : ".$HashAVG." kH/s   ยอดค้างจ่ายรอดต่อไป : ".$Unpaid." ZEC";
+$arrPostData['messages'][0]['text'] = "รายงานสถานะเครื่องขุด z1070x3  ความเร็วปัจจุบัน : ".$HR."  ความเร็วเฉลี่ย : ".$HashAVG." kH/s   ยอดค้างจ่ายรอบต่อไป : ".$Unpaid." ZEC";
  
 $ch2 = curl_init();
 curl_setopt($ch2, CURLOPT_URL,$strUrl);
