@@ -36,52 +36,10 @@
    
    dataget = data;
    var newhtml = '<p>HashRate : '+dataget['hashRate']+'</p>;
-   
-   
-     
-                   
-  });
-   
-   },
+
    type: 'GET'
-});
-
-
-
-
-
-
-   });
 
   </script>
   
-</head>                  
-
-<body>
-    
-    
-       <div class="container" style="padding:25px;">
-   <div class="row">
-
-   <h3>สภาพอากาศประเทศไทยวันนี้</h3>
-     <div class="form-group">
-  <label for="sel1">กรุณาเลือกจังหวัด</label>
-  <select class="form-control" id="plist">
-    
-  </select>
-</div>
-
-   </div>
-   
-    <div class="row">
-    
-    <div id="preview">
-       
-      </div>
-    </div>
-  
-  </div>  
-</body>
-    
-</html>
+</head>
     
